@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+#error_explanation {
+  h2 {
+    color: #fff;
+    background-color: red;
+    padding: 10px;
+    font-size: smaller;
+    margin: 0px;
+  }
+  ul {
+    background-color: grey;
+    padding: 25px 30px;
+    list-style: circle;
+    border: 5px solid red;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors > label {
+  background-color: red;
+}
+
+.field_with_errors > input, textarea{
+  border: 2px solid red;
+}

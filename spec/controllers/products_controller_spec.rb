@@ -24,11 +24,21 @@ RSpec.describe ProductsController, type: :controller do
   # Product. As you add validations to Product, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {
+        title: 'Lorem Ipsum',
+        description: 'Wibbles are fun!',
+        image_url: 'lorem.jpg',
+        price: 19.95
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+        title: 'Lorem Ipsum',
+        description: 'Wibbles are fun!',
+        image_url: 'lorem',
+        price: 19.95
+    }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -155,5 +165,4 @@ RSpec.describe ProductsController, type: :controller do
       expect(response).to redirect_to(products_url)
     end
   end
-
 end

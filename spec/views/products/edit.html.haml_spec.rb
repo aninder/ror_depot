@@ -5,7 +5,7 @@ RSpec.describe "products/edit", type: :view do
     @product = assign(:product, Product.create!(
       :title => "MyString",
       :description => "MyText",
-      :image_url => "MyString",
+      :image_url => "MyString.jpg",
       :price => "9.99"
     ))
   end
