@@ -10,6 +10,7 @@ RSpec.describe Product, type: :model do
     should validate_numericality_of(:price)
                .is_greater_than_or_equal_to 0.01
   end
+  it{ should validate_length_of(:title).is_at_least(4) }
 # it { is_expected.to validate_length_of(:password).is_at_least(10) }
 
   let(:valid_attributes) {
